@@ -39,6 +39,7 @@
 /* LEFT PRODUCT DETAILS */
 .hero-content {
     position: relative;
+    left:150px;
     z-index: 1;
     flex: 0 0 55%;
     width: 55%;
