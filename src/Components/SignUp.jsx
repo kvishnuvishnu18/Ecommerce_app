@@ -1,7 +1,11 @@
 
 import React from 'react';
-import { FaTimes } from 'react-icons/fa';
-
+import {
+    FaTimes,
+    FaFacebookF,
+    FaGoogle,
+    FaTwitter
+} from 'react-icons/fa';
 
 function Signup({ onClose, onLogin }) {
 
@@ -29,7 +33,6 @@ function Signup({ onClose, onLogin }) {
             <div className="login-box">
 
                 {/* CLOSE BUTTON */}
-
                 <button
                     className="close-btn"
                     onClick={onClose}
@@ -38,7 +41,6 @@ function Signup({ onClose, onLogin }) {
                 </button>
 
                 {/* SIGNUP HEADING */}
-
                 <h2>Create Account</h2>
 
                 <p className="login-text">
@@ -53,7 +55,6 @@ function Signup({ onClose, onLogin }) {
                 </p>
 
                 {/* SIGNUP FORM */}
-
                 <form onSubmit={handleSignup}>
 
                     <input
@@ -92,6 +93,33 @@ function Signup({ onClose, onLogin }) {
                     </button>
 
                 </form>
+
+                {/* SOCIAL LOGIN */}
+                <div className="or-login">
+
+                    <span></span>
+
+                    <p>or signup with</p>
+
+                    <span></span>
+
+                </div>
+
+                <div className="social-login">
+
+                    <button className="facebook-btn" type="button">
+                        <FaFacebookF /> Facebook
+                    </button>
+
+                    <button className="google-btn" type="button">
+                        <FaGoogle /> Google
+                    </button>
+
+                    <button className="twitter-btn" type="button">
+                        <FaTwitter /> Twitter
+                    </button>
+
+                </div>
 
             </div>
 
